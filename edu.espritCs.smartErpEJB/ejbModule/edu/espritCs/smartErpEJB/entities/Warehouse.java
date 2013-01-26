@@ -1,4 +1,4 @@
-package edu.espritCs.smartErpEJB;
+package edu.espritCs.smartErpEJB.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;

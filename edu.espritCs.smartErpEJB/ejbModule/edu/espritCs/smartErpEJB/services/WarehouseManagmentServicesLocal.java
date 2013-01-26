@@ -2,7 +2,7 @@ package edu.espritCs.smartErpEJB.services;
 
 import javax.ejb.Local;
 
-import edu.espritCs.smartErpEJB.Warehouse;
+import edu.espritCs.smartErpEJB.entities.Warehouse;
 
 @Local
 public interface WarehouseManagmentServicesLocal {

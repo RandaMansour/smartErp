@@ -3,7 +3,7 @@ package edu.espritCs.smartErpWeb.ctr;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import edu.espritCs.smartErpEJB.Warehouse;
+import edu.espritCs.smartErpEJB.entities.Warehouse;
 
 /**
  * 
@@ -17,11 +17,6 @@ public class WarehouseCtr {
 	 * Models
 	 */
 	private Warehouse warehouse = new Warehouse();
-	/**
-	 * Injection of the proxy
-	 * @return
-	 */
-	private 
 
 	public Warehouse getWarehouse() {
 		return warehouse;
@@ -30,5 +25,11 @@ public class WarehouseCtr {
 	public void setWarehouse(Warehouse warehouse) {
 		this.warehouse = warehouse;
 	}
+
+	/**
+	 * Injection of the proxy
+	 * 
+	 * @return
+	 */
 
 }
