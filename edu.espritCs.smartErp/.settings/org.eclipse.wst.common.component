@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="edu.espritCs.smartErp">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="edu.espritCs.smartErpEJB.jar" deploy-path="/" handle="module:/resource/edu.espritCs.smartErpEJB/edu.espritCs.smartErpEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="edu.espritCs.smartErpWeb.war" deploy-path="/" handle="module:/resource/edu.espritCs.smartErpWeb/edu.espritCs.smartErpWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
