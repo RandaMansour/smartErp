@@ -21,7 +21,8 @@ public class Warehouse implements Serializable {
 	public Warehouse() {
 		super();
 	}   
-	@Id    
+	@Id 
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int getIdWarehouse() {
 		return this.idWarehouse;
 	}
