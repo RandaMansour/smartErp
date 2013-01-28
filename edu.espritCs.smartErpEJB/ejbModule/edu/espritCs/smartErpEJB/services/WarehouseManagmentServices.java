@@ -1,6 +1,8 @@
 package edu.espritCs.smartErpEJB.services;
 
 import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import edu.espritCs.smartErpEJB.entities.Warehouse;
 
@@ -11,6 +13,9 @@ import edu.espritCs.smartErpEJB.entities.Warehouse;
 public class WarehouseManagmentServices implements
 		WarehouseManagmentServicesRemote, WarehouseManagmentServicesLocal {
 
+	@PersistenceContext
+	private EntityManager entityManager;
+
 	/**
 	 * Default constructor.
 	 */
@@ -20,7 +25,7 @@ public class WarehouseManagmentServices implements
 
 	@Override
 	public void addWarehouse(Warehouse warehouse) {
-		// TODO Auto-generated method stub
+		entityManager.persist(warehouse);
 
 	}
 
