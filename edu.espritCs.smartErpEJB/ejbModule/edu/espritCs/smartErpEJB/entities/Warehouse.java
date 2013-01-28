@@ -13,6 +13,9 @@ public class Warehouse implements Serializable {
 
 	
 	private int idWarehouse;
+	private String nameWarehouse;
+	private String locality;
+	
 	private static final long serialVersionUID = 1L;
 
 	public Warehouse() {
@@ -26,5 +29,21 @@ public class Warehouse implements Serializable {
 	public void setIdWarehouse(int idWarehouse) {
 		this.idWarehouse = idWarehouse;
 	}
+	public String getNameWarehouse() {
+		return nameWarehouse;
+	}
+	public void setNameWarehouse(String nameWarehouse) {
+		this.nameWarehouse = nameWarehouse;
+	}
+	public String getLocality() {
+		return locality;
+	}
+	public void setLocality(String locality) {
+		this.locality = locality;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
    
 }
+
