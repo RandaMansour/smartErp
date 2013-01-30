@@ -3,6 +3,7 @@
 	<persistence-unit name="edu.espritCs.smartErpEJB">
 	<jta-data-source>java:/mysql</jta-data-source>
 	<class>edu.espritCs.smartErpEJB.entities.Warehouse</class>
+	<class>edu.espritCs.smartErpEJB.entities.User</class>
 		
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
