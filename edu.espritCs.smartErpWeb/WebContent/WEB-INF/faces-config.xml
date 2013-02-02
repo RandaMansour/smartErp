@@ -14,5 +14,14 @@
 			<redirect />
 		</navigation-case>
 	</navigation-rule>
+	<navigation-rule>
+		<display-name>listWarehouses.xhtml</display-name>
+		<from-view-id>/listWarehouses.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>updateWarehouse</from-outcome>
+			<to-view-id>/updateWarehouse.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>
