@@ -11,6 +11,10 @@ public class AuthenticationCtr {
 
 	private String userLogin;
 	private String userPassword;
+	private boolean loggedIn;
+	
+	
+
 
 	/**
 	 * Proxy injection
@@ -23,6 +27,7 @@ public class AuthenticationCtr {
 		String strResult = "KO";
 		if (userAuthenticationServiceLocal.signIn(userLogin, userPassword)) {
 			strResult = "OK";
+			loggedIn = true;
 		}
 		return strResult;
 	}
@@ -50,6 +55,14 @@ public class AuthenticationCtr {
 	public void setUserAuthenticationServiceLocal(
 			UserAuthenticationServiceLocal userAuthenticationServiceLocal) {
 		this.userAuthenticationServiceLocal = userAuthenticationServiceLocal;
+	}
+
+	public boolean isLoggedIn() {
+		return loggedIn;
+	}
+
+	public void setLoggedIn(boolean loggedIn) {
+		this.loggedIn = loggedIn;
 	}
 	
 	

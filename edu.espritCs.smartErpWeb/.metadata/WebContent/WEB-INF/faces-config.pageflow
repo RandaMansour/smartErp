@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13595739367860" configfile="/edu.espritCs.smartErpWeb/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="288" y="140" id="pf13595741080661" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13595743045774" path="/login.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="welcome.html" x="108" y="140" id="pf13595741080673" path="/welcome.html"/>
-  <nodes xsi:type="pageflow:PFPage" name="addWarehouse.xhtml" x="192" y="252" id="pf13595743045775" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf13595743045774" path="/addWarehouse.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="listWarehouses.xhtml" x="482" y="155" id="pf13598165354540" outlinks="pf13598165354551" path="/listWarehouses.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="updateWarehouse.xhtml" x="372" y="276" id="pf13598165354552" inlinks="pf13598165354551" path="/updateWarehouse.xhtml"/>
-  <links id="pf13595743045774" target="pf13595743045775" source="pf13595741080661" outcome="OK" redirect="true"/>
+  <nodes xsi:type="pageflow:PFPage" name="listWarehouses.xhtml" x="482" y="155" id="pf13598165354540" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf13598165354551" path="/listWarehouses.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="updateWarehouse.xhtml" x="372" y="276" id="pf13598165354552" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13598165354551" path="/updateWarehouse.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/login.xhtml" x="239" y="144" id="pf13608679853250" outlinks="pf13608679853251" path="/pages/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/addWarehouse.xhtml" x="192" y="288" id="pf13608679853252" inlinks="pf13608679853251" path="/pages/addWarehouse.xhtml"/>
   <links id="pf13598165354551" target="pf13598165354552" source="pf13598165354540" outcome="updateWarehouse" redirect="true"/>
+  <links id="pf13608679853251" target="pf13608679853252" source="pf13608679853250" outcome="OK" redirect="true"/>
 </pageflow:Pageflow>

@@ -6,20 +6,20 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
     version="2.1">
 	<navigation-rule>
-		<display-name>login.xhtml</display-name>
-		<from-view-id>/login.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>OK</from-outcome>
-			<to-view-id>/addWarehouse.xhtml</to-view-id>
-			<redirect />
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
 		<display-name>listWarehouses.xhtml</display-name>
 		<from-view-id>/listWarehouses.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>updateWarehouse</from-outcome>
 			<to-view-id>/updateWarehouse.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>pages/login.xhtml</display-name>
+		<from-view-id>/pages/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>OK</from-outcome>
+			<to-view-id>/pages/addWarehouse.xhtml</to-view-id>
 			<redirect />
 		</navigation-case>
 	</navigation-rule>
