@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jagatai
+Build-Jdk: 1.6.0_29
+Extension-Name: prime-showcase
+Implementation-Title: prime-showcase
+Implementation-Version: 1.0.0-SNAPSHOT
+
